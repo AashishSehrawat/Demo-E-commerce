@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+}
+
+nav{
+   
+    display: flex;
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.396);
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+}
+
+.left{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 2px 0px;
+}
+
+.mid{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+}
+
+.mid>a{
+    color: white;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.mid>a:hover{
+    border-bottom: 4px solid rgb(70, 3, 70);
+    color: rgb(221, 225, 228);
+}
+
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right>img{
+    width: 2vmax;
+}
+
+section{
+    height: 90vh;
+    display: flex;
+    background-image: radial-gradient(white, rgb(194, 190, 190));
+}
+
+.container{
+    width: 100%;
+}
+
+#rightCont{
+    display: flex;
+    justify-content: end;
+    padding-right: 6vmax;
+}
+
+#rightCont>img{
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.447));
+}
+
+#leftCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#leftCont>h1{
+    font-size: 5vmax;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 1vmax 0 4vmax ;
+}
+
+#leftCont>h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 1vmax 5vmax 4vmax ;
+}
+
+#leftCont>p{
+    font-family: cursive;
+    width: 70%;
+    margin-left: 4vmax;
+}
+
+#leftCont>button{
+    width: 25%;
+    margin: 4vmax 0 0 7vmax;
+    padding: .6vmax;
+    border: none;
+    border-radius: 25px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 1.1vmax;
+}
+
+#leftCont>button:hover{
+    background-color: rgb(120, 24, 120);
+    color: rgb(221, 225, 228);
+}
+/* ----------------------------------- */
+#product{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product>h1{
+    margin: 4vmax;
+    padding: 0 0 1vmax 12vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vmax;
+    width: 26vmax;
+    border-bottom: 5px solid blueviolet;
+}
+
+.productCont{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5vmax;
+}
+
+.productBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+    transition: all .3s;
+}
+
+.productBlock:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.productBlock>img{
+    max-width: 20vmax;
+}
+
+.productBlock>h4{
+    font-size: 1.3vmax;
+    margin: 1vmax;
+}
+
+.productBlock>h5{
+    font-size: 1.1vmax;
+}
+/* ----------------------------------- */
+footer{
+    margin-top: 3vmax;
+    background-color: rgb(39, 35, 35);
+    display: flex;
+    padding: 3vmax;
+}
+
+.leftFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    color: white;
+    gap: 1vmax;
+}
+
+.leftFooter>h3{
+    font-size: 1.5vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.leftFooter>img{
+ width: 15vmax;
+}
+
+.leftFooter>p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.midFooter{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.midFooter>h1{
+    color: blueviolet;
+    font-size: 4.5vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1vmax;
+}
+
+.midFooter>p{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1vmax auto;
+    max-width: 60%;
+    text-align: center;
+}
+
+.rightFooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightFooter>h3{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vmax;
+    margin-bottom: 1.5vmax;
+}
+.rightFooter>p{
+    margin: 1vmax;
+    color: white;
+    font-size: 1.3vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
